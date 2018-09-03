@@ -32,11 +32,8 @@ while(true){
         case "andar":
             let distancia :number = readline.question("Distancia: ");
             switch(car.andar(distancia)){
-                case 3:
-                    console.log("Sem passageiros");
-                    break;
                 case 2:
-                    console.log("O carro andou");
+                    console.log("Sem passageiros");
                     break;
                 case 1:
                     console.log("Sem gasolina");
