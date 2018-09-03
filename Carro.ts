@@ -37,20 +37,14 @@ export class Carro{
 
     andar(km:number):number{
         if(this.passageiros>0){
-            let calc:number = km/10;
-            if(this.combustivel<1){
+            let calc:number = km/10.
+            if(this.combustivel - calc < 0){
                 return 1;
             }else{
-                if(calc<1){
-                    this.combustivel -=1;
-                    return 2;
-                }else{
-                    this.combustivel -=calc;
-                    return 2;
-                }
+                    this.combustivel -= calc;
             }
         }else{
-            return 3;
+            return 2;
         }
     }
 }
